@@ -1,0 +1,44 @@
+@import 'variaveis';
+
+.btn{
+    padding: 15px 40px;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.btn-primary{
+    background-color: $corPrimaria !important;
+    border: none;
+    transition: .3s ease-in;
+    font-size: 20px;
+    
+    i{
+        transition: .3s ease-in;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    &:hover{
+        transform: scale(1.1);
+        i{
+            transform: translateX(10px);
+            font-size: 20px;
+        }
+    }
+}
+
+.btn-outline{
+    border: 3px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 35px;
+    font-weight: 400;
+    transition: .3s ease-in;
+
+    &:hover{
+        color: $corPrimaria;
+        background-color: #fff;
+        font-size: 24px;
+        transform: scale(1.1)
+    }
+}

@@ -1,0 +1,591 @@
+* {
+  outline: none !important;
+}
+.transicao{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  transform:translateY(-100vh) ;
+  top: 0;
+  background-color: #1a3262;
+  z-index: 999;
+}
+.transicao:nth-child(2){
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  transform:translateY(-100vh) ;
+  top: 0;
+  background-color: #c02524;
+  z-index: 999;
+}
+.m-none {
+  display: block !important;
+}
+.form-control:focus {
+  box-shadow: none;
+  outline: none;
+  border: 2px solid;
+  border-color: #0e2156;
+}
+.form-group.error .form-control {
+  border-color: #bf0e17 !important;
+  border: 2px solid;
+}
+.form-group.error span {
+  display: inline-block;
+  color: #bf0e17;
+}
+.form-group span {
+  display: none;
+}
+#menu-lateral a:after,
+#menu-lateral a:hover:after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  background: #1a3262;
+  margin-left: 4px;
+  position: absolute;
+  left: 100%;
+  bottom: 19px;
+  width: 10px;
+}
+#contato,
+#tech {
+  background-image: url(../../assets/img/img-azul.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+* {
+  font-family: Raleway, sans-serif;
+}
+p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+#menu-lateral {
+  text-align: left;
+  position: fixed;
+  width: auto;
+  height: 100%;
+  background-color: #c02524;
+  left: -100%;
+  z-index: 50;
+  transition: 0.5s ease-in;
+  cursor: auto;
+  top: 75px;
+}
+#menu-lateral.ativo {
+  left: 0;
+}
+#menu-lateral a {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+  transition: 0.3s ease;
+}
+#menu-lateral a:after {
+  height: 0;
+  transition: 0.3s ease;
+}
+#menu-lateral a:hover {
+  color: #1a3262;
+}
+#menu-lateral a:hover:after {
+  height: 9px;
+}
+#banner {
+  height: 70vh;
+  position: relative;
+}
+#banner:before {
+  content: "";
+  width: 50%;
+  height: 80%;
+  right: 0;
+  background-color: #e0e0e0;
+  position: absolute;
+  display: block;
+}
+#business .titulo-section-2:after,
+#sobre-nos .titulo-section-1:after,
+#tech .titulo-section-2:after {
+  display: none;
+}
+#banner .conteudo-banner {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  z-index: 1;
+}
+#banner .img-p {
+  position: relative;
+  z-index: 0;
+}
+#b3 span {
+  position: absolute;
+  top: 33%;
+  left: -20%;
+  font-size: 20px;
+  font-weight: 900;
+}
+#b3.dark path {
+  stroke: #bf0e17;
+}
+#b3.dark span {
+  color: #bf0e17;
+}
+.custom-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.box {
+  width: 90px;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  cursor: pointer;
+  stroke: #bf0e17;
+  opacity: 0.95;
+}
+#sobre-nos {
+  margin-top: -3%;
+}
+#sobre-nos .img-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#sobre-nos .titulo-section-1 {
+  font-size: 11rem;
+  color: #fff;
+  font-weight: 900;
+  text-shadow: 0 6px 21px rgba(0, 0, 0, 0.3);
+  transform: translate(-8rem, 0);
+}
+#sobre-nos h2:after,
+#tech h2:after {
+  display: block;
+  content: "";
+  width: 15%;
+  height: 7px;
+  margin-top: 2px;
+  background: #bf0e17;
+}
+#sobre-nos .titulo-section-1 strong {
+  color: #bf0e17;
+}
+#sobre-nos h2 {
+  color: #1a3262;
+  font-size: 3rem;
+}
+#sobre-nos .sub-titulo {
+  color: #1a3262;
+  font-size: 26px;
+  max-width: 20ch;
+}
+#contato p,
+#tech p {
+  max-width: 33ch;
+}
+#tech {
+  overflow: hidden;
+  padding: 100px 0;
+}
+#tech .conteudo-interno {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+#business .conteudo-interno,
+#contato .conteudo-interno {
+  position: absolute;
+  bottom: 0;
+  left: -20%;
+  z-index: 1;
+}
+#tech h2 {
+  font-size: 3rem;
+}
+#tech .sub-titulo {
+  font-size: 1.5rem;
+  color: #98bfff;
+}
+#tech .titulo-section-2 {
+  font-size: 11rem;
+  color: #bf0e17;
+  font-weight: 900;
+  transform: translate(32rem, -6rem);
+}
+#tech .titulo-section-2 strong {
+  color: #1a3262;
+}
+#tech .img-tech {
+  transform: translateY(3rem);
+}
+#business {
+  background-image: url(../../assets/img/bg-empresas.jpg);
+  background-repeat: no-repeat;
+  background-position: 53vw;
+  padding-bottom: 100px;
+}
+#business .titulo-section-2 {
+  font-size: 11rem;
+  color: #1a3262;
+  font-weight: 900;
+}
+#business .sub-titulo,
+#contato h2,
+#cta h2 {
+  font-size: 3rem;
+}
+#business .sub-titulo,
+#business .titulo-section-2 strong {
+  color: #bf0e17;
+}
+#cta {
+  background-color: #bf0e17;
+}
+#cta h2 {
+  font-weight: 900;
+}
+#contato {
+  padding: 30px 0 100px;
+  height: 80vh;
+}
+#contato #form-principal {
+  margin-top: 50px;
+  transform: translateY(19vh);
+}
+#contato h2:after {
+  content: "";
+  display: block;
+  width: 15%;
+  height: 7px;
+  margin-top: 2px;
+  background: #bf0e17;
+}
+#contato .sub-titulo {
+  font-size: 1.5rem;
+  color: #98bfff;
+}
+#contato .titulo-section-2 {
+  font-size: 11rem;
+  color: #bf0e17;
+  font-weight: 900;
+}
+#contato .titulo-section-2:after {
+  display: none;
+}
+#contato .titulo-section-2 strong {
+  color: #1a3262;
+}
+.btn {
+  padding: 15px 40px;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+.btn-primary {
+  background-color: #bf0e17 !important;
+  border: none;
+  transition: 0.3s ease-in;
+  font-size: 20px;
+}
+.btn-primary i {
+  transition: 0.3s ease-in;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.btn-primary:hover {
+  transform: scale(1.1);
+}
+.btn-primary:hover i {
+  transform: translateX(10px);
+  font-size: 20px;
+}
+.btn-outline {
+  border: 3px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 10px 35px;
+  font-weight: 400;
+  transition: 0.3s ease-in;
+}
+.btn-outline:hover {
+  color: #bf0e17;
+  background-color: #fff;
+  font-size: 24px;
+  transform: scale(1.1);
+}
+
+/* QUEM SOMOS */
+
+#quem-somos {
+  margin-top: 9rem;
+}
+#quem-somos h1 {
+  color: #1a3262;
+  font-size: 3rem;
+}
+#quem-somos h4 {
+  color: #1a3262;
+  font-size: 1.8rem;
+}
+#quem-somos h1:after {
+  display: block;
+  content: "";
+  width: 15%;
+  height: 7px;
+  margin-top: 2px;
+  background: #bf0e17;
+}
+
+#missao {
+  padding: 50px 0;
+  background-image: url("../img/bg-fullazul.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#missao .card {
+  padding: 30px;
+  height: 100%;
+}
+.title-missao {
+  color: #1a3262;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+.title-missao:after {
+  display: block;
+  margin: 0 auto;
+  content: "";
+  width: 45%;
+  height: 7px;
+  margin-top: 2px;
+  background: #bf0e17;
+}
+#cta-2 h5 {
+  color: #1a3262;
+  font-size: 2rem;
+}
+#cta-2 h2 {
+  font-size: 4rem;
+  color: #1a3262;
+}
+
+/* servicos */
+#servicos {
+  margin-top: 7rem;
+}
+.bg-cinza {
+  background-color: #f5f5f5;
+}
+#servicos h1,
+#servicos h2 {
+  color: #1a3262;
+  font-size: 1.8rem;
+}
+#servicos h1:after,
+#servicos h2:after {
+  display: block;
+  content: "";
+  width: 15%;
+  height: 7px;
+  margin-top: 2px;
+  background: #bf0e17;
+}
+#servicos h2 span {
+  font-size: 200%;
+}
+
+/* CONTATO */
+section#mapa {
+  margin-bottom: -180px;
+}
+#mapa iframe {
+  width: 100%;
+  height: 500px;
+}
+/* FOOTER */
+footer {
+  padding: 50px 0;
+  background-color: #011336;
+  color: #fff;
+}
+@media (max-width: 768px) and (min-width: 426px) {
+  [class*="titulo-section-"] {
+    font-size: 7rem !important;
+  }
+  #sobre-nos .titulo-section-1 {
+    transform: translate(0);
+  }
+  #sobre-nos .img-2 {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1024px) {
+  #contato,
+  #tech {
+    background-position: center;
+  }
+  #sobre-nos .titulo-section-1 {
+    transform: translate(-8rem, 0);
+  }
+  #sobre-nos .img-2 {
+    left: 30px;
+  }
+  #tech .img-tech {
+    transform: translateY(3rem);
+  }
+}
+@media (max-width: 1023px) and (min-width: 800px) {
+  [class*="titulo-section-"] {
+    font-size: 7rem !important;
+  }
+  #banner {
+    padding: 100px 0;
+  }
+  #banner:before {
+    width: 45%;
+    top: 0;
+  }
+  #sobre-nos .titulo-section-1 {
+    transform: translate(0);
+  }
+  #tech .titulo-section-2 {
+    transform: translate(18rem, -6rem);
+  }
+}
+@media (max-width: 768px) and (min-width: 426px) {
+  #banner {
+    padding: 100px 0 0;
+    height: auto;
+  }
+  #banner:before {
+    width: 45%;
+    top: 0;
+  }
+  #tech .titulo-section-2 {
+    transform: translate(23rem, -6rem);
+  }
+  #tech .img-tech {
+    transform: scale(1.4);
+  }
+}
+@media (max-width: 425px) {
+  #menu-lateral{
+    top: 50px;
+  }
+  /* CONTATO */
+  section#mapa {
+    margin-bottom: -80px;
+  }
+  #contato {
+    height: unset;
+    background-size: cover;
+    color: #fff;
+}
+  #mapa iframe {
+    width: 100%;
+    height: 500px;
+  }
+  .m-none {
+    display: none !important;
+  }
+  #menu-lateral a {
+    font-size: 2rem;
+  }
+
+  #quem-somos {
+    margin-top: 5rem;
+  }
+  .box {
+    width: 50px;
+  }
+  #missao {
+    background-size: cover;
+  }
+  #cta-2 h2 {
+    font-size: 2rem;
+  }
+  #cta-2 h5 {
+    font-size: 1rem;
+  }
+
+  #sobre-nos {
+    margin: 0;
+  }
+  [class*="titulo-section-"] {
+    font-size: 4rem !important;
+  }
+  #sobre-nos .titulo-section-1,
+  #tech .titulo-section-2 {
+    transform: translate(0);
+  }
+  #contato,
+  #tech {
+    background-position: left top;
+  }
+  #menu-lateral {
+    width: 100%;
+    height: 100%;
+  }
+  #banner {
+    height: auto;
+    padding: 100px 0 0 0;
+  }
+  #banner:before {
+    display: none;
+  }
+  #banner .conteudo-banner {
+    top: 65%;
+    left: 20%;
+  }
+  #sobre-nos .img-2 {
+    position: absolute;
+    bottom: -35px;
+    left: 53px;
+  }
+  #tech {
+    background-size: 180vh;
+  }
+  #tech .conteudo-interno {
+    position: unset;
+  }
+  #business {
+    background-image: none;
+  }
+  #business .conteudo-interno {
+    position: unset;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  #contato #form-principal {
+    transform: translateY(3vh);
+    margin-bottom: 50px;
+  }
+  #servicos {
+    margin-top: 3rem;
+  }
+}

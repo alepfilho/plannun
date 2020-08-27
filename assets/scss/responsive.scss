@@ -1,0 +1,115 @@
+@media (max-width: 1440px) and (min-width: 1024px) {
+  #sobre-nos {
+    .titulo-section-1 {
+      transform: translate(-8rem, 0);
+    }
+    .img-2 {
+      left: 30px;
+    }
+  }
+  #tech {
+    background-position: center;
+    .img-tech {
+      transform: translateY(3rem);
+    }
+  }
+  #contato {
+    background-position: center;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 800px) {
+  #banner {
+    padding: 100px 0px;
+
+    &:before {
+      width: 45%;
+      top: 0;
+    }
+  }
+  #sobre-nos {
+    .titulo-section-1 {
+      transform: translate(0);
+    }
+  }
+  #tech {
+    .titulo-section-2 {
+      transform: translate(18rem, -6rem);
+    }
+  }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+  #banner {
+    padding: 100px 0px;
+
+    &:before {
+      width: 45%;
+      top: 0;
+    }
+  }
+  #tech {
+    .titulo-section-2 {
+      transform: translate(23rem, -6rem);
+    }
+    .img-tech {
+      transform: scale(1.4);
+    }
+  }
+}
+@media (max-width: 425px) {
+    #menu-lateral {
+        width: 100%;
+        height: auto;
+    }
+  #banner {
+    padding: 100px 0 0;
+
+    &:before {
+      display: none;
+    }
+    .conteudo-banner {
+      top: 65%;
+      left: 20%;
+    }
+  }
+  #sobre-nos {
+    .img-2 {
+      position: absolute;
+      bottom: -35px;
+      left: 53px;
+    }
+    .titulo-section-1 {
+      transform: translate(0);
+    }
+  }
+  #tech {
+    background-position: left top;
+    background-size: 180vh;
+
+    .titulo-section-2 {
+      transform: translate(0);
+    }
+    .conteudo-interno {
+      position: unset;
+    }
+  }
+  #business {
+    background-image: none;
+
+    .conteudo-interno {
+      position: unset;
+      margin: 0 auto;
+      width: fit-content;
+    }
+  }
+  #contato {
+    background-position: left top;
+    background-size: 100vh;
+
+    #form-principal {
+      transform: translateY(3vh);
+      margin-bottom: 50px;
+    }
+  }
+}
